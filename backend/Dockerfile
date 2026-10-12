@@ -1,4 +1,4 @@
-```dockerfile
+
 # Multi-stage build for Spring Boot Backend
 FROM eclipse-temurin:21-jdk-jammy AS build
 WORKDIR /app
@@ -24,4 +24,4 @@ EXPOSE 8080
 ENV PORT=8080
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
-```
+
